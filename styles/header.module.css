@@ -1,0 +1,55 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1rem;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap:1rem;
+    flex: 1;
+
+}
+.menu{
+    flex: 1;
+    display: flex;
+    gap:2rem;
+    list-style-type: none;
+    justify-content:center;
+    z-index: 99;
+}
+
+.menu>:hover{
+    cursor: pointer;
+    color: var(--themeRed);
+}
+.rightSide{
+    flex: 1;
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+}
+.logo>span{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.cart{
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    z-index: 99;
+}
+.Badge{
+position: absolute;
+display: flex;
+background-color: var(--themeRed);
+color: white;
+border-radius:50% ;
+width:20px;
+height: 20px;
+justify-content: center;
+align-items: center;
+right: -0.5rem;
+}
